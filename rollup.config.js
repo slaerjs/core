@@ -3,9 +3,9 @@ import buble from 'rollup-plugin-buble';
 
 export default {
   entry: 'src/index.js',
-  dest: 'dist/semtex-core.js',
+  dest: 'dist/slaer-core.js',
   format: 'umd',
-  moduleName: 'semtex',
+  moduleName: 'slaer',
   sourceMap: true,
   plugins: [ buble() ]
 };

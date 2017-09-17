@@ -2,12 +2,12 @@
   "name": "@slaerjs/core",
   "version": "0.0.0",
   "description": "slaer core system infrastructure",
-  "main": "dist/semtex-core.js",
+  "main": "dist/slaer-core.js",
   "module": "src/index.js",
   "scripts": {
     "lint": "eslint src/**/*.js test/**/*.js rollup.config.js",
     "compile": "rollup -c",
-    "compress": "uglifyjs -c -m -o dist/semtex-core.min.js --source-map -- dist/semtex-core.js",
+    "compress": "uglifyjs -c -m -o dist/slaer-core.min.js --source-map -- dist/slaer-core.js",
     "test": "mocha test --reporter dot",
     "build": "npm run lint && npm run compile && npm run compress && npm test"
   },
