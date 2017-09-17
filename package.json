@@ -1,0 +1,38 @@
+{
+  "name": "@slaerjs/core",
+  "version": "0.0.0",
+  "description": "slaer core system infrastructure",
+  "main": "dist/semtex-core.js",
+  "module": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js test/**/*.js rollup.config.js",
+    "compile": "rollup -c",
+    "compress": "uglifyjs -c -m -o dist/semtex-core.min.js --source-map -- dist/semtex-core.js",
+    "test": "mocha test --reporter dot",
+    "build": "npm run lint && npm run compile && npm run compress && npm test"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "chai": "4.0.2",
+    "eslint": "3.19.0",
+    "mocha": "3.4.2",
+    "rollup": "0.41.6",
+    "rollup-plugin-buble": "0.15.0",
+    "uglify-js": "3.0.23"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slaerjs/core.git"
+  },
+  "keywords": [
+    "web",
+    "application",
+    "framework"
+  ],
+  "author": "Gary Doublé <garydouble@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slaerjs/core/issues"
+  },
+  "homepage": "http://slaerjs.io"
+}
